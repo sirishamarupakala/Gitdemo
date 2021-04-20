@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="Academy.E2E.ValidateContact">
+        <methods>
+          <include name="initialize"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- Academy.E2E.ValidateContact -->
+      <class name="Academy.E2E.HomePage">
+        <methods>
+          <include name="basePageNavigation" invocation-numbers="0 1"/>
+          <include name="initialize"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- Academy.E2E.HomePage -->
+      <class name="Academy.E2E.ValidateTitle">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.E2E.ValidateTitle -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan department" parallel="tests" thread-count="2">
+<listeners>
+<listener class-name="testNG.Listeners"></listener>
+</listeners>
+ 
+  <test  name="Regression" parallel="classes" thread-count="2">
+  	<!-- <groups>
+    	<run>
+  		<include name="Smoke">
+  		</include>
+    	</run>
+    </groups> -->
+     <parameter name="URL" value="google.com"></parameter>
+     <parameter name="APIKey/user" value="Sam"></parameter>
+    	<classes>
+     		 <class name="testNG.ClassTNG1"/>
+      		 <class name="testNG.ClassTNG2"/>
+      		
+    	</classes>
+  </test>
+   <test  name="Regression1">
+  	<!-- <groups>
+    	<run>
+  		<include name="Smoke">
+  		</include>
+    	</run>
+    </groups> -->
+     <parameter name="URL" value="yahoo.com"></parameter>
+    	<classes>
+     		 
+      		 <class name="testNG.ClassTNG3"/>
+       		 <class name="testNG.ClassTNG4"/>
+    	</classes>
+  </test>
+  
+ </suite>
